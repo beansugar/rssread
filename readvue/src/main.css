@@ -1,0 +1,11 @@
+:root{
+   --nav-bg :white;
+   --nav-button:white;
+   --all-bg:white;
+   --sub-single:rgba(255,255,255,0.3);
+   --button-bg:white;
+}
+html,body{
+   margin:0;
+   padding:0;
+}
