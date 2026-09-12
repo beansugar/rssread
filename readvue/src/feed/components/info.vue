@@ -16,13 +16,29 @@ onMounted(()=>{
 
 <template>
     <div class="info-all">
-    <h1>{{ info?.name }}</h1>
+    <h1 class="info-name">{{ info?.name }}</h1>
+    <div class="info-detail">
     <h3>{{ info?.author }}</h3>
     <p>{{ info?.type }}</p>
+   </div>
     </div>
 </template>
 <style scoped lang="css">
 .info-all{
     height:100%;
+    margin-top:0;
+    width:100%;
+}
+.info-name{
+    margin:0 auto;
+}
+h3,p {
+    padding:0;
+    margin:0;
+}
+.info-detail{
+    display:flex;
+    flex-direction:row;
+    margin-top:5%;
 }
 </style>

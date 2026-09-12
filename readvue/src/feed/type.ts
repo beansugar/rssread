@@ -4,11 +4,12 @@
     type:number
     count:number
 }
-interface feeditems{
-   items:item[]
-}
+
 interface  item {
+   id:number
    title:string
+   PublishTime : number
    link:string
+   audiolink:string
 }
-export  type{ feedinfo,feeditems}
+export  type{ feedinfo,item}
