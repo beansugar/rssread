@@ -14,11 +14,13 @@ const service =axios.create({
    const result=resp.body
    return result
    case 401:
-    
+
+   default:
+   throw new Error(resp.code,resp.message)
    }
  },
  )
- //请求拦截器 
+ //请求拦截器
  service.interceptors.request.use(
   (config =>{
    const user=userStore()
@@ -33,5 +35,5 @@ const service =axios.create({
  function ReplaceToken(){
   const user=userStore()
   const refresh=user.getRefreshToken()
-   
+
  }

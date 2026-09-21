@@ -1,9 +1,7 @@
 <template>
     <div class="reg">
-    <input type="text" v-model="data.name">
-     <input type="password" v-model="data.password">
-     <input>
-     <input>
+    <input type="text" placeholder="请输入用户名" v-model="data.name">
+     <input type="password" placeholder="请输入密码" v-model="data.password">
      <button @click="reg(data)">注册</button>
     </div>
 </template>
@@ -32,6 +30,9 @@ import router from '@/router'
 }
 input{
     width:70%;
+    margin-top:5dvh;
+    border-radius:5px;
+    border:1px solid grey;
     height:30px;
 }
 </style>
