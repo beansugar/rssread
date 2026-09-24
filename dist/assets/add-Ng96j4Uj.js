@@ -1,0 +1,1 @@
+import{C as e,i as t,s as n}from"./runtime-core.esm-bundler-BouPupA6.js";import{i as r}from"./index-CKwxMaJO.js";var i={},a={class:`subadd`};function o(r,i){return e(),n(`div`,a,[...i[0]||=[t(`input`,{type:`text`},null,-1),t(`button`,null,`提交`,-1)]])}var s=r(i,[[`render`,o],[`__scopeId`,`data-v-6ec0fad0`]]);export{s as default};

@@ -1,0 +1,1 @@
+import{C as e,f as t,i as n,s as r,t as i}from"./runtime-core.esm-bundler-BouPupA6.js";import{n as a,t as o}from"./index-CKwxMaJO.js";var s=t({__name:`setting`,setup(t){let s=()=>{a().layout(),o.push(`/login`)};return(t,a)=>(e(),r(i,null,[a[0]||=n(`h3`,null,`setting`,-1),n(`button`,{onClick:s},`退出`)],64))}});export{s as default};

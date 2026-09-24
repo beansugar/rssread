@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import navbar from'@/components/navbar.vue'
 import top from './components/navtop.vue';
+import bar from'./audio/bar.vue';
 </script>
 
 <template>
@@ -13,13 +14,17 @@ import top from './components/navtop.vue';
   </div>
   <div class="bottom">
   <navbar ></navbar>
-</div>
   </div>
+  <div class="bar">
+  <bar></bar>
+  </div>
+</div>
 </template>
 <style scoped>
 
 .app{
-  width:100vw;
+  width:100%;
+  padding:0  ;
   height:100dvh;
 }
 .router{
@@ -46,5 +51,15 @@ import top from './components/navtop.vue';
   position:fixed;
   inset:auto auto 0 auto;
    z-index:100;
+}
+.bar{
+ position:fixed;
+ left:10%;
+ right:10%;
+ width:auto;
+ bottom:50px;
+ height:40px;
+ background:gray;
+ border-radius:10px;
 }
 </style>

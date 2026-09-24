@@ -1,0 +1,1 @@
+import{t as e}from"./service-DJmdFr0R.js";function t(){return e.get(`/sub/count`)}function n(t,n){return e.get(`sub/detail`,{params:{page:t,size:n}})}export{n,t};
