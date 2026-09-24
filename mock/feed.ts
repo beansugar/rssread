@@ -43,7 +43,7 @@ const feeditemsmock: MockMethod = {
         PublishTime: 1788169742 - id * 1000, // 模拟递减的时间戳
         link: `https://example.com/article/${id}`,
         // 模拟奇数有音频，偶数无音频（用来测试 v-if="data.audiolink"）
-        audiolink: id % 2 === 1 ? `https://example.com/audio/${id}.mp3` : ''
+        audiolink:"https://traffic.megaphone.fm/SCIM2290485637.mp3"
       }
     })
 

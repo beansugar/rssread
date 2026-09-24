@@ -3,6 +3,9 @@
 import { getFeedItemsApi } from '../api';
 import type{ item} from '../type';
 import { formateTime } from '@/utils/formatetime';
+import control from '@/components/control.vue';
+import { useAudioStore } from '@/store/store';
+const stores=useAudioStore()
 const items =ref<item[]>([])
 const page =ref<number>(1)
 const size=ref<number>(30)
@@ -30,7 +33,9 @@ const props=defineProps<{
   <div v-for="data in items" :key="data.id">
     <h3>{{data?.title}}</h3>
     <p>{{ formateTime(data.PublishTime,8) }}</p>
-    <button v-if="data.audiolink"></button>
+    <button v-if="data.audiolink" @click="stores.set(data.audiolink,data.title,data.id)">
+    <control :state="data.id===stores.id&&stores.isplay"></control>
+    </button>
   </div>
 </van-list>
 </template>

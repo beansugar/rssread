@@ -10,7 +10,7 @@ const router = createRouter({
    {path:'/sub/follower',component:()=>import('@/sub/view/followers.vue')},
    {path:'/user/setting',component:()=>import('@/user/setting.vue')},
    {name:'feed',path:'/feed/:id',component:()=>import('@/feed/view/feed.vue')},
-   {path:'/play',component:()=>import("@/audio/bar.vue")},
+   {path:'/play',component:()=>import("@/components/bar.vue")},
   ],
 })
 export default router

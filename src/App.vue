@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import navbar from'@/components/navbar.vue'
 import top from './components/navtop.vue';
-import bar from'./audio/bar.vue';
+import bar from'./components/bar.vue';
 </script>
 
 <template>
